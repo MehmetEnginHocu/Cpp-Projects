@@ -1,0 +1,23 @@
+#include <iostream>
+
+bool Palindrome(int x) {
+    if (x < 0) {
+        return false;// NEGATIVE
+    }
+
+int main() {
+    int num;
+
+    // INPUT//
+    std::cout << "Enter an integer: ";
+    std::cin >> num;
+
+    // KONTROL //
+        if (Palindrome(num)) {
+        std::cout << num << " is a palindrome.\n";
+    } else {
+        std::cout << num << " is not a palindrome.\n";
+    }
+
+    return 0;
+}
